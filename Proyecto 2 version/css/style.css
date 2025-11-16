@@ -1,0 +1,186 @@
+/* =========================================
+   ESTILOS PRINCIPALES DEL CINE
+   Todo en español y en hyphen-case
+   ========================================= */
+
+/* ----- Reset general ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ----- Header ----- */
+header {
+  width: 100%;
+  padding: 20px;
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+}
+
+/* ----- Menú móvil ----- */
+.menu-btn {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ----- Hero ----- */
+.hero {
+  background: url('img/pelicula1.jpg') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* ----- Secciones ----- */
+.section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ff0000;
+}
+
+/* ----- Galería ----- */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.gallery-container img {
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+/* ----- Formulario ------ */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 12px;
+  background: #ff0000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #cc0000;
+}
+
+/* ----- Footer ----- */
+footer {
+  background: #000;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* ----- Parallax ----- */
+.parallax {
+  background-image: url("img/pelicula2.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ----- Responsivo (Móvil / Tablet / PC) ----- */
+@media (max-width: 900px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  nav ul.activo {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
