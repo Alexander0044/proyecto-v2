@@ -27,7 +27,7 @@ The project relies on clean separation of concerns across multiple CSS and JavaS
 
 | File | Description | Focus |
 | :--- | :--- | :--- |
-| `base.css` | General styles for Header, Footer, Artist Bio, Discography, Infography, and Reviews pages. | Full, responsive grid layouts and general aesthetics. |
+| `styles.css` | General styles for Header, Footer, Artist Bio, Discography, Infography, and Reviews pages. | Full, responsive grid layouts and general aesthetics. |
 | `merch.css` | Styles for the Product Listings and the Shopping Cart (`cesta.html`). | Full, includes responsive product grid and mobile cart stacking logic. |
 | `form.css` | Styles for the product Management and Review Submission forms. | Full, optimized container and input presentation for all devices. |
 
